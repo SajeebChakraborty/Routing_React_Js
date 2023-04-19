@@ -6,6 +6,7 @@ export default function Protected({isLogin,Children}) {
  
     if(!isLogin){            
         return <Navigate to="/" replace/>    
+        
     }
     return Children;
 
