@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Blogs from './components/Blogs';
+import Error from './components/Error';
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
         <BrowserRouter>
           <Routes>
 
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Error />} />
 
           </Routes>     
         </BrowserRouter>
