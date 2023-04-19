@@ -6,12 +6,16 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Blogs from './components/Blogs';
 import Error from './components/Error';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div  >
 
         <BrowserRouter>
+
+          <Navbar/>
+
           <Routes>
 
             <Route path="/" element={<Home />} />
