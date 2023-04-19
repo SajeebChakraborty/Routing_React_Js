@@ -4,7 +4,8 @@ import AddBlog from './AddBlog'
 
 export default function Protected({isLogin,Children}) {
  
-    if(!isLogin){                                                 
+    if(!isLogin){    
+                                                     
         return <Navigate to="/" replace/>                      
     }
     return Children;
