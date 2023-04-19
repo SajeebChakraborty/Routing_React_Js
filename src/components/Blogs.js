@@ -53,7 +53,7 @@ export default function Blogs() {
                 <article >
                     <h2>{title}</h2>
                     <p>{content}</p>
-                    <Link to={title}>Learn More</Link>
+                    <Link to={title} state={{id,title,content}}>Learn More</Link>
                 </article>
             )
         })}
